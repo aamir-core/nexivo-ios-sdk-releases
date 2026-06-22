@@ -1,2 +1,2 @@
 
-@_exported import NexivoWidgetSDK
+@_exported import NexivoWidget
