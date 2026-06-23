@@ -69,7 +69,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ---
 
-## React Native Integration
+<details>
+<summary><strong>React Native Integration</strong></summary>
 
 ### 1. Add the SDK package in Xcode
 
@@ -210,6 +211,8 @@ export default function App() {
     return (/* your app UI */);
 }
 ```
+
+</details>
 
 ---
 
