@@ -16,6 +16,8 @@ A native iOS SDK that provides a floating call/chat widget with agent card, phon
 
 ### Swift Package Manager
 
+**Step 1 — Add the Nexivo SDK**
+
 1. In Xcode, go to **File → Add Package Dependencies**
 2. Enter the package URL:
    ```
@@ -24,6 +26,21 @@ A native iOS SDK that provides a floating call/chat widget with agent card, phon
 3. Select **Up to Next Major Version** from `1.0.5`
 4. Click **Add Package**
 5. Add **NexivoWidget** to your app target
+
+**Step 2 — Add LiveKit (required peer dependency)**
+
+The SDK uses LiveKit for voice/video calls but does not bundle it. You must add it separately:
+
+1. In Xcode, go to **File → Add Package Dependencies**
+2. Enter the package URL:
+   ```
+   https://github.com/livekit/client-sdk-swift
+   ```
+3. Select **Up to Next Major Version** from `2.5.0`
+4. Click **Add Package**
+5. Add **LiveKit** to your app target
+
+> Skipping this step will cause `Undefined symbol: LiveKit.*` linker errors at build time.
 
 ---
 
