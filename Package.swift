@@ -5,13 +5,13 @@
       name: "NexivoWidget",
       platforms: [.iOS(.v15)],
       products: [
-          .library(name: "NexivoWidget", targets: ["NexivoWidgetCore"])
+          .library(name: "NexivoWidgetSDK", targets: ["NexivoWidgetSDK"])
       ],
       targets: [
           .binaryTarget(
-              name: "NexivoWidgetCore",
-              url: "https://github.com/aamir-core/nexivo-ios-sdk-releases/releases/download/v1.0.5/NexivoWidgetSDK.xcframework.zip",
-              checksum: "d4fa1f3df89fbbc4a8ab298c2dfaca9ceaf8b641f5bbcfe45ddb94a20fd50eea"
+              name: "NexivoWidgetSDK",
+              url: "https://github.com/aamir-core/nexivo-ios-sdk-releases/releases/download/v1.0.10/NexivoWidgetSDK.xcframework.zip",
+              checksum: "29e17e7e8e6b3d5c22ade6b8ad3faa98de9ba6318ef52afe3421e70c5555f5ad"
           )
       ]
   )
