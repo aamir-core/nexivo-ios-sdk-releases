@@ -14,7 +14,7 @@
           .binaryTarget(
               name: "NexivoWidgetCore",
               url: "https://github.com/aamir-core/nexivo-ios-sdk-releases/releases/download/v1.0.10/NexivoWidgetCore.xcframework.zip",
-              checksum: "2eed0186476a783ef22e2223f13216a5f608d72737383da568254b5179786c00"
+              checksum: "0b7562def54819f35c45a3eeb49b59b20615a37e8837c1c62116497d16e3952d"
           ),
           .target(
               name: "NexivoWidgetSDK",
