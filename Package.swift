@@ -1,15 +1,15 @@
 // swift-tools-version: 5.9
-  import PackageDescription
+  import PackageDescription    
 
   let package = Package(
-      name: "NexivoWidget",
+      name: "NexivoWidget",   // must match URL-derived identity
       platforms: [.iOS(.v15)],
       products: [
           .library(name: "NexivoWidgetSDK", targets: ["NexivoWidgetSDK"])
       ],
       dependencies: [
           .package(url: "https://github.com/livekit/client-sdk-swift.git", from: "2.5.0")
-      ],
+      ],                       
       targets: [
           .binaryTarget(
               name: "NexivoWidgetCore",
@@ -18,11 +18,11 @@
           ),
           .target(
               name: "NexivoWidgetSDK",
-              dependencies: [
+              dependencies: [  
                   "NexivoWidgetCore",
                   .product(name: "LiveKit", package: "client-sdk-swift")
               ],
               path: "Sources/NexivoWidgetSDK"
           )
-      ]
+      ]                        
   )
