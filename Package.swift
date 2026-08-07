@@ -1,9 +1,9 @@
 // swift-tools-version: 5.9
-  import PackageDescription
+ import PackageDescription
 
   let package = Package(
       name: "nexivo-ios-sdk-releases",
-      platforms: [.iOS(.v15)],                                                                                                                                                                     
+      platforms: [.iOS(.v15)],
       products: [
           .library(name: "NexivoWidgetCore", targets: ["NexivoWidgetCore"])
       ],
