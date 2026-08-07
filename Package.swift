@@ -22,7 +22,7 @@
                   "NexivoWidgetCore",
                   .product(name: "LiveKit", package: "client-sdk-swift")
               ],
-              path: "Sources/NexivoWidgetSDK"
+              path: "Sources/NexivoWidget"
           )
       ]                        
   )
