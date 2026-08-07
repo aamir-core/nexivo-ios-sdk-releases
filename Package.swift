@@ -2,7 +2,7 @@
   import PackageDescription    
 
   let package = Package(
-      name: "NexivoWidget",   // must match URL-derived identity
+      name: "nexivo-ios-sdk-release",   // must match URL-derived identity
       platforms: [.iOS(.v15)],
       products: [
           .library(name: "NexivoWidgetSDK", targets: ["NexivoWidgetSDK"])
