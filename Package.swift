@@ -2,7 +2,7 @@
   import PackageDescription    
 
   let package = Package(
-      name: "nexivo-ios-sdk-releases",
+      name: "NexivoWidget",
       platforms: [.iOS(.v15)],
       products: [
           .library(name: "NexivoWidget", targets: ["NexivoWidget"])
