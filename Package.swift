@@ -13,8 +13,8 @@
       targets: [
           .binaryTarget(
               name: "NexivoWidgetCore",
-              url: "https://github.com/aamir-core/nexivo-ios-sdk-releases/releases/download/v1.1.1/NexivoWidgetCore.xcframework.zip",
-              checksum: "6e77d06fde014c794cabfd789ffcf05c42588e2efac026b52d54ed2de201bc7a"
+              url: "https://github.com/aamir-core/nexivo-ios-sdk-releases/releases/download/v1.1.2/NexivoWidgetCore.xcframework.zip",
+              checksum: "d31b41d572054fefddff3ac7996884e2d3501f7ac263d911d4cb41a4462d111f"
           ),
           .target(
               name: "NexivoWidget",
