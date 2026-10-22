@@ -1,29 +1,25 @@
 // swift-tools-version: 5.9
-  import PackageDescription
+  import PackageDescription    
 
   let package = Package(
-      name: "IntelinteractWidget",
+      name: "NexivoWidget",
       platforms: [.iOS(.v15)],
       products: [
-          .library(name: "IntelinteractWidget", targets:
-  ["IntelinteractWidget"])
+          .library(name: "NexivoWidget", targets: ["NexivoWidget"])
       ],
-      dependencies: [
-          .package(url: "https://github.com/livekit/client-sdk-swift.git", from:
-   "2.5.0")
+      dependencies: [          
+          .package(url: "https://github.com/livekit/client-sdk-swift.git", from: "2.5.0")
       ],
       targets: [
           .binaryTarget(
-              name: "IntelinteractWidgetCore",
-              url: "https://github.com/aamir-core/intelinteract-ios-sdk-releases
-  /releases/download/1.0.0/IntelinteractWidgetCore.xcframework.zip",
-              checksum:
-  "ff541a164b228a79c978b1f3106e65d157e66c20518c01f9f01e55bf3ef33b51"
+              name: "NexivoWidgetCore",
+              url: "https://github.com/aamir-core/nexivo-ios-sdk-releases/releases/download/v1.2.1/NexivoWidgetCore.xcframework.zip",
+              checksum: "552a02228f208bf4814d2e3dc19dc4a47f4b03847bf2b922d5890f634898acd7"
           ),
           .target(
-              name: "IntelinteractWidget",
-              dependencies: [
-                  "IntelinteractWidgetCore",
+              name: "NexivoWidget",
+              dependencies: [  
+                  "NexivoWidgetCore",
                   .product(name: "LiveKit", package: "client-sdk-swift")
               ]
           )
